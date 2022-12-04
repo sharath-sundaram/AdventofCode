@@ -1,6 +1,6 @@
 # Helper Functions
 # Part 1
-def part1(list1):
+def part1(x):
     scoreDict = {
         'A X': 4,
         'A Y': 8,
@@ -12,15 +12,15 @@ def part1(list1):
         'C Y': 2,
         'C Z': 6,
     }
-    pointTotal1 = 0
-    for i in list1:
-        pointTotal1 += scoreDict[str(i)]
-    print("The total score following the strategy guide would be " + str(pointTotal1) + "pts")
+    pointTotal = 0
+    for i in x:
+        pointTotal += scoreDict[str(i)]
+    print("The total score following the strategy guide would be " + str(pointTotal) + "pts")
     return
 
 
 # Part 2
-def part2(list2):
+def part2(x):
     scoreDict = {
         'A X': 3,
         'A Y': 4,
@@ -32,10 +32,10 @@ def part2(list2):
         'C Y': 6,
         'C Z': 7,
     }
-    pointTotal2 = 0
-    for i in list2:
-        pointTotal2 += scoreDict[str(i)]
-    print("The total score following the strategy guide would be " + str(pointTotal2) + "pts")
+    pointTotal = 0
+    for i in x:
+        pointTotal += scoreDict[str(i)]
+    print("The total score following the strategy guide would be " + str(pointTotal) + "pts")
     return
 
 

@@ -1,8 +1,8 @@
 # Helper Functions
 # Part 1
-def part1(array1):
+def part1(x):
     totalSum = 0
-    for i in lines:
+    for i in x:
         comp1 = []
         comp2 = []
         letters = [j for j in i]
@@ -21,16 +21,16 @@ def part1(array1):
 
 
 # Part 2
-def part2(array2):
+def part2(x):
     totalSum = 0
-    elf1 = array2[0::3]
-    elf2 = array2[1::3]
-    elf3 = array2[2::3]
+    elf1 = x[0::3]
+    elf2 = x[1::3]
+    elf3 = x[2::3]
 
     for i in range(len(elf1)):
-        letters1 = set([x for x in elf1[i]])
-        letters2 = set([y for y in elf2[i]])
-        letters3 = set([z for z in elf3[i]])
+        letters1 = set([q for q in elf1[i]])
+        letters2 = set([r for r in elf2[i]])
+        letters3 = set([s for s in elf3[i]])
         commonL = str(list(letters1 & letters2 & letters3)[0])
         if commonL.islower():
             totalSum += (ord(commonL) - 96)

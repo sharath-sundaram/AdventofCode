@@ -1,3 +1,13 @@
+# Helper Functions
+def topcrate(x): # prints the crate at the top of each stack
+    topCrates = []
+    for q in x:
+        topCrates.append(q.pop())
+    print(
+        topCrates[0] + topCrates[1] + topCrates[2] + topCrates[3] + topCrates[4] + topCrates[5] + topCrates[6] + topCrates[7] + topCrates[8])
+    return
+
+
 # Functions
 # Part 1
 def part1(x, y):
@@ -8,12 +18,7 @@ def part1(x, y):
         endRow = int(instructSplit[5]) - 1
         for r in range(amount):
             x[endRow].append(x[startRow].pop())
-    topCrate = []
-    for s in x:
-        topCrate.append(s.pop())
-    print(
-        topCrate[0] + topCrate[1] + topCrate[2] + topCrate[3] + topCrate[4] + topCrate[5] + topCrate[6] + topCrate[7] +
-        topCrate[8])
+    topcrate(x)
     return
 
 
@@ -27,13 +32,7 @@ def part2(x, y):
         popIndex = len(x[startRow]) - amount
         for r in range(amount):
             x[endRow].append(x[startRow].pop(popIndex))
-    topCrate = []
-    for s in x:
-        topCrate.append(s.pop())
-    print(
-        topCrate[0] + topCrate[1] + topCrate[2] + topCrate[3] + topCrate[4] + topCrate[5] + topCrate[6] + topCrate[7] +
-        topCrate[8])
-
+    topcrate(x)
     return
 
 

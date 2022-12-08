@@ -82,7 +82,6 @@ def part2(outerdir):
     spaceNeeded = 30000000
     spaceTaken = outerdir.getsize()
     spaceToFreeUp = spaceNeeded - (totalDiskSpace - spaceTaken)
-    print(spaceToFreeUp)
     outerdir.oversize(counter, spaceToFreeUp)
     for q in counter:
         sizeOfOptions.append(q.getsize())
